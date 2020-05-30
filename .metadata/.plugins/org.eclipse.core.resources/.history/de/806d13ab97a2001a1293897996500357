@@ -1,0 +1,24 @@
+package com.order.Orderms.model;
+
+public class Order {
+
+	private String orderDesc;
+	private int    quantity;
+	public String getOrderDesc() {
+		return orderDesc;
+	}
+	public void setOrderDesc(String orderDesc) {
+		this.orderDesc = orderDesc;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	@Override
+	public String toString() {
+		return "Order [orderDesc=" + orderDesc + ", quantity=" + quantity + "]";
+	}
+	
+}

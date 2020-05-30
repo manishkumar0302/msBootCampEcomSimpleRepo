@@ -1,0 +1,9 @@
+package com.ecomm.Authms.Repository;
+
+public class ReoleRepository {
+
+	public ReoleRepository() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

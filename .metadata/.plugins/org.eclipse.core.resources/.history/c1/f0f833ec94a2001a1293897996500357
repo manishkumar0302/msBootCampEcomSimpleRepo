@@ -1,0 +1,13 @@
+package com.order.Orderms.model;
+
+
+
+@Entity
+@Table(	name = "users", 
+		uniqueConstraints = { 
+			@UniqueConstraint(columnNames = "username"),
+			@UniqueConstraint(columnNames = "email") 
+		})
+public class TokenStore {
+
+}

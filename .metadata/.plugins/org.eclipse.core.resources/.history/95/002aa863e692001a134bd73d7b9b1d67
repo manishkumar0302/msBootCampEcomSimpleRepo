@@ -1,0 +1,28 @@
+package com.order.Orderms.controller;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import io.jsonwebtoken.Claims;
+
+
+import com.order.Orderms.service.Jwtservice;
+
+@RestController
+@RequestMapping(path = "/order")
+public class OrderController {
+
+	Jwtservice jwtserviceproxy;
+	
+	@RequestMapping(path = "/productpage/{token}", method = RequestMethod.GET)
+	public String getpage(@PathVariable String token) {
+		
+		Claims claim = jwtserviceproxy.decodeAuthmsJWT(token);
+		return " ";
+	}
+	
+	
+	
+	
+}

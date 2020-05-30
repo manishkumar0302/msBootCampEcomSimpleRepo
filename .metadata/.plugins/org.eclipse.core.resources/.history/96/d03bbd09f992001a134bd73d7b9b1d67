@@ -1,0 +1,38 @@
+package com.order.Orderms.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
+
+import com.order.Orderms.service.Jwtservice;
+
+@RestController
+@RequestMapping(path = "/order")
+public class OrderController {
+
+	@Autowired
+	private Jwtservice jwtserviceproxy;
+	
+	@RequestMapping(path = "/productpage", method = RequestMethod.GET)
+	public String getpage(@RequestBody String token) {
+		
+		 String userSubject = jwtserviceproxy.decodeAuthmsJWT(token);
+		 if(userSubject.equals("Failed")) {
+			  return "Invalid user";
+		 }else {
+			 
+			 String trnsactionTokn = jwtserviceproxy.createJWT(Math.random(), "orderms",userSubject,100989877);
+			 return "Valid user";
+		 }
+		
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,5 @@
+package com.order.Orderms.Repository;
+
+public interface OrderRepository extends JpaRepository<Role, Long> {
+
+}

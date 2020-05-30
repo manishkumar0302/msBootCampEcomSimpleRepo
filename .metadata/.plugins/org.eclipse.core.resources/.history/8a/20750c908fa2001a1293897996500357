@@ -1,0 +1,8 @@
+package com.order.Orderms.service;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Service;
+
+@Service
+public class Orderservice {
+}

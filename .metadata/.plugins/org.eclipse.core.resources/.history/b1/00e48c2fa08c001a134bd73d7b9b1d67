@@ -1,0 +1,9 @@
+package com.ecomm.Authms.Repository;
+
+public class UserRepository {
+
+	public UserRepository() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

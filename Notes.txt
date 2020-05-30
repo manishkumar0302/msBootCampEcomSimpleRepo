@@ -1,0 +1,4 @@
+1.Install MySql
+2. In the app, the username and password is kept as root and root. Change the password accordingly based on the MySql installed.
+3. Run the InsertSql.sql before starting the Authms Microservice.
+4. Run Authms first and then Orderms.

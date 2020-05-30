@@ -1,0 +1,8 @@
+#App properties
+Orderms.app.jwtSecret= authmsSecretKey
+Orderms.app.secretkey= ordermsSecretkey
+Orderms.app.jwtExpirationMs= 56400000
+
+spring.thymeleaf.cache=false;
+
+server.port=7071

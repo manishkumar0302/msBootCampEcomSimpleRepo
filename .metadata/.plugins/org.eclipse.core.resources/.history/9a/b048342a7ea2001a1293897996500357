@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <div align="center">
+		<h1>Please Order</h1>
+	<form action="#" th:action="@{/order/ordersubmit}" method="post" th:object="${order}">
+		<table>
+		<tr>
+			<th>Item</th>
+			<th>Quantity</th>
+		</tr>
+	    <tr>
+	        <td><input type="text" th:field="*{orderDesc}"/> </td>
+			<td><input type="text" th:field="*{quantity}"/></td>
+		</tr>
+		<tr>
+		    <td><input type="text" th:field="*{orderDesc}"/> </td>
+			<td><input type="text" th:field="*{quantity}"/></td>
+		</tr>
+		<tr>
+		    <td><input type="text" th:field="*{orderDesc}"/> </td>
+			<td><input type="text" th:field="*{quantity}"/></td>
+		</tr>
+		<tr>
+		    <td><input type="text" th:field="*{orderDesc}"/> </td>
+			<td><input type="text" th:field="*{quantity}"/></td>
+		</tr>
+		<tr>
+		    <td><input type="text" th:field="*{orderDesc}"/> </td>
+			<td><input type="text" th:field="*{quantity}"/></td>
+		</tr>
+	</table>
+	 <button type="submit">Order</button><br/>
+	
+  </form>	
+ </div>
+</body>
+</html>

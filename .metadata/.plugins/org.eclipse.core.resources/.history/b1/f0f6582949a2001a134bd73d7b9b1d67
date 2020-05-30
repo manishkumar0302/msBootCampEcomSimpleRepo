@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+ <head>
+     Hello, Spring
+ </head>
+ <body>
+  <p>
+    Hello, Manish
+  </p>
+ </body>
+ 
+ 
+ </html>

@@ -1,0 +1,6 @@
+#App properties
+Authms.app.jwtSecret= authmsSecretKey
+Orderms.app.secretkey=ordermsSecretkey
+
+
+server.port=7071

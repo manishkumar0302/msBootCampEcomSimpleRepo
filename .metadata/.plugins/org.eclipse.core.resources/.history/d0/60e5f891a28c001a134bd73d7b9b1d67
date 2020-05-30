@@ -1,0 +1,5 @@
+package com.ecomm.Authms.Security.service;
+
+public interface UserDetails {
+
+}

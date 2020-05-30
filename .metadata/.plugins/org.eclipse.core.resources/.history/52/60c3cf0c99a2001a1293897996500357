@@ -1,0 +1,21 @@
+package com.order.Orderms.service;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Service;
+
+import com.order.Orderms.model.Order;
+
+@Service
+public class Orderservice {
+	private OrderRepository repo;
+	
+	public String processOrder(Order ord) {
+		
+		
+		return null;
+	}
+	
+	
+}
+
+
